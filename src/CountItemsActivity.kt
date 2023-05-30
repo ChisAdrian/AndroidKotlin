@@ -34,8 +34,8 @@ class CountItemsActivity : AppCompatActivity() {
             finish()
         }
 
-        adapter = CountItemsActivityAdapter(data)
-        // On Click Item Show Calculator
+        adapter = CountItemsActivityAdapter(data) 
+        // On Click Item Show Calculator see CountItemsActivityAdapter for 
         { item ->
             val i = Intent(this, CalculatorActivityActivity::class.java)
             i.putExtra("EXTRA_INFO", "$item,$name")
