@@ -11,6 +11,7 @@ class SqliteDatabase internal constructor(context: Context?) :
         override
         fun onCreate(db: SQLiteDatabase)
         {
+            // Raw Strings because I have Objects :))
             val creteStr = "CREATE TABLE COUNTING_TABLE (id INTEGER PRIMARY KEY , list_name TEXT,item TEXT, item_descript TEXT, quan NUMERIC)"
             db.execSQL(creteStr)
 
