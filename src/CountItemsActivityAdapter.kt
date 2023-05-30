@@ -7,6 +7,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
 class CountItemsActivityAdapter(private val itemList: List<ModelCount>,
+                                // click Item using Kotlin lambdas
                                 private val onItemClick: (String) -> Unit) :
     RecyclerView.Adapter<CountItemsActivityAdapter.MyViewHolder>() {
     inner class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView)
